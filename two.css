@@ -1,31 +1,42 @@
- 
-.container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-   grid-template-areas:
-    ;
-}
-
- .div-1{
-    background-color: aqua;
-    height: 300px;
-    grid-area: ;
+ body{
+   margin: 0px;
+   padding: 20px;
  }
 
- .div-2{
-    background-color: rgb(150, 177, 177);
-     height: 300px;
-        grid-area: ;
+ .container{
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   
+   "one two two"
+   "one three four"
+   ;
+  
+   gap: 10px;
+   height: 90vh;
  }
 
- .div-3{
-    background-color: rgb(73, 211, 103);
-     height: 300px;
-        grid-area: ;
+ .box{
+   border: 2px solid tomato;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   font-weight: bolder;
  }
 
- .div-4{
-    background-color: rgb(206, 221, 221);
-     height: 300px;
-        grid-area: ;
+ .box-1{
+   grid-area:one;
+ }
+ .box-2{
+   grid-area: two ;
+ }
+ .box-3{
+grid-area: three;
+   
+ }
+ .box-4{
+   grid-area: four;
+   
  }
